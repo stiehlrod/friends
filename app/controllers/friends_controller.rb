@@ -1,7 +1,7 @@
 class FriendsController < ApplicationController
 
   get '/friends'
-    Friend.all
+    Friendship.all
   end
 
 end
