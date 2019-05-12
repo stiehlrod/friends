@@ -6,8 +6,13 @@
 run 'bundle install'
 gem install activerecord
 gem install sinatra-activerecord
-gem install rake # to apply migrations
-rake db:{create,migrate}
-## Database
 
-## Local server: run 'ruby app/views/friends.rb' and navigate to 'http://localhost:4567/'.
+## Database
+postgresql
+rake db:{create,migrate}
+
+## Local server
+run 'ruby app/views/friends.rb' and navigate to 'http://localhost:4567/'.
+
+##Production Server
+https://still-headland-29350.herokuapp.com/
