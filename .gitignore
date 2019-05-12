@@ -1,3 +1,4 @@
 tmp/
 coverage/
 config/
+Gemfile.lock
