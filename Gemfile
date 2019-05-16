@@ -7,10 +7,7 @@ gem 'sinatra-activerecord'
 gem 'activerecord'
 gem 'sinatra-contrib'
 gem 'rake'
-gem 'thin'
-gem 'require_all'
 gem 'fast_jsonapi'
-# gem "activesupport", "~> 4.2.5"
 
 group :development, :test do
   gem 'capybara', '~> 3.0.3'
