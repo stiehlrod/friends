@@ -21,8 +21,8 @@ describe "Friendships API" do
     get '/api/v1/friendships?initiator_id=2'
 
       data = JSON.parse(last_response.body)
-      expect(data.count).to eq(2)
-      expect(data.values).to include(4)
-      expect(data.values).to include(3)
+      expect(data.count).to eq(1)
+      expect(data.include?(4)).to eq(false)
+      expect(data.include?(3)).to eq(true)
   end
 end
