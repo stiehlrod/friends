@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe "Friendships API" do
   it "sends a list of friendships" do
-    Friendship.create(initiator_id: 2, recipient_id: 3)
-    Friendship.create(initiator_id: 2, recipient_id: 4)
+
+    # Friendship.create(initiator_id: 2, recipient_id: 3)
+    # Friendship.create(initiator_id: 2, recipient_id: 4)
 
     post '/api/v1/friendships',
 

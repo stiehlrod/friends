@@ -1,4 +1,5 @@
 require_relative '../models/friendship.rb'
+require 'pry'
 
 class FriendsApp < Sinatra::Base
   set :root, File.expand_path("..",__dir__)
@@ -13,11 +14,10 @@ class FriendsApp < Sinatra::Base
     # render status:200
   end
 
-  get '/api/v1/friendships?initiator_id=2' do
-    conn = Faraday.new('/api/v1/friendships?initiator_id=2')
-    response = conn.get
-    results = JSON.parse(response.body)
-    binding.pry
+  get '/api/v1/friendships' do
+    initiator_id = params[:initiator_id]
+    recipient_ids = Friendship.get_friends(initiator_id)
+    JSON.generate(recipient_ids)
   end
 
 
