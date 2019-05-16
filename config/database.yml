@@ -1,0 +1,14 @@
+# specify which database and adapter to use for which environment
+
+development:
+  adapter: postgresql
+  database: friends-development
+
+test:
+  adapter: postgresql
+  database: friends-test
+
+production:
+  adapter: postgresql
+  database: friends-production
+  url: <%= ENV['DATABASE_URL'] %>
