@@ -2,7 +2,7 @@
 ENV["RACK_ENV"] = "test"
 
 require 'bundler'
-require 'webmock/rspec'
+# require 'webmock/rspec'
 Bundler.require(:default, :test)
 require File.expand_path('../../config/environment.rb', __FILE__)
 require 'capybara/dsl'
