@@ -1,5 +1,5 @@
 require_relative '../models/friendship.rb'
-require 'pry'
+
 
 class FriendsApp < Sinatra::Base
   set :root, File.expand_path("..",__dir__)
