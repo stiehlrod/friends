@@ -1,3 +1,6 @@
+# require './friends_app'
+# run Sinatra::Application
+
 require 'bundler'
 Bundler.require
 
